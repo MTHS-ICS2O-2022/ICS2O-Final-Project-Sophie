@@ -12,3 +12,7 @@ if (navigator.serviceWorker) {
     scope: "/ICS2O-Final-Project-Sophie/",
   })
 }
+
+function startClicked() {
+  
+}
