@@ -66,38 +66,41 @@
         </div>
       </header>
       <main class="mdl-layout__content">
-        <br>
-        <br>
-        <div id="question">
-          <img 
-            src="./images/whopikachu.jpg"
-            alt="pikachu"
-            width="50%"
-            height="60%"
-            />
-        </div>
-        <br>
-        <br>
-        <div id='answers'>
-          <!-- Simple Textfield -->
-        <form action="#">
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="answer" style='border-bottom: 1px solid red;' >
-            <label class="mdl-textfield__label" for="answer">pokemon...</label>
+        <div id="all">
+          <br>
+          <br>
+          <div id="question">
+            <img 
+              src="./images/whopikachu.jpg"
+              alt="pikachu"
+              width="50%"
+              height="60%"
+              />
           </div>
-        </form>
-        </div>
-        
-        <br>
-        <br>
-        <div id="button">
-          <!-- Accent-colored raised button with ripple -->
-          <button
-            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            onclick="submitClicked()"
-          >
-            submit
-          </button>
+          <br>
+          <br>
+          <div id='answers'>
+            <h5>your answer:</h5>
+              <!-- Simple Textfield -->
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="answer" style='border-bottom: 1px solid red;' >
+                <label class="mdl-textfield__label" for="answer">pokemon...</label>
+              </div>
+            </form>
+          </div>
+          
+          <br>
+          <br>
+          <div id="button">
+            <!-- Accent-colored raised button with ripple -->
+            <button
+              class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+              onclick="submitClicked()"
+            >
+              submit
+            </button>
+          </div>
         </div>
       </main>
     </div>
