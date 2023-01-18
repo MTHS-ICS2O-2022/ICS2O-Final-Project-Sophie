@@ -77,6 +77,10 @@ function submitClicked() {
 
   const answer = String(document.getElementById('answer').value)
   
+  if (answer == stage[id].answer) {
+    
+  }
 
+  
     document.getElementById('pokeimages').src = stage[count].images
 }
