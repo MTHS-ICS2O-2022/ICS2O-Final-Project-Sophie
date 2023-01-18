@@ -13,25 +13,63 @@ if (navigator.serviceWorker) {
   })
 }
 
+const answer = String(document.getElementById('answer').value)
+  let stage = [
+    {
+      answer:'pikachu'
+    },
+    {
+      img: "./img/whobulbasaur.jpg",
+      answer:'bulbasaur'
+    },
+    {
+      img: "./img/whodiglet.jpg",
+      answer:'diglet'
+    },
+    {
+      img: "./img/whoevee.png",
+      answer:'eevee'
+    },
+    {
+      img: "./img/whojigglypuff.jpg",
+      answer:'jigglypuff'
+    },
+    {
+      img: "./img/wholapras.jpg",
+      answer:'lapras'
+    },
+    {
+      img: "./img/whomewtwo.jpg",
+      answer:'mewtwo'
+    },
+    {
+      img: "./img/whomimikyu.jpg",
+      answer:'mimikyu'
+    },
+    {
+      img: "./img/whomudkip.png",
+      answer:'mudkip'
+    },
+    {
+      img: "./img/whopsyduck.png",
+      answer:'psyduck'
+    },
+    {
+      img: "./img/whovaporeon.jpg",
+      answer:'vaporeon'
+    },
+  ]
+  let count = 0
+  let points = 0
+  
+
 function submitClicked() {
 
-  const answer = String(document.getElementById('answer').value)
-  const pics = [
-    url ('../images/whobulbasaur.jpg'),
-    url ('../images/whodiglet.jpg'),
-    url ('../images/whoevee.png'),
-    url ('../images/whojigglypuff.jpg'),
-    url ('../images/wholapras.jpg'),
-    url ('../images/whomewtwo.jpg'),
-    url ('../images/whomimikyu.jpg'),
-    url ('../images/whopsyduck.png'),
-    url ('../images/whovaporeon.jpg'),
-    url ('../images/whomudkip.png'),
-  ]
+  if (answer == stage[count].answer) {
+    points++
+  }
   
-  sessionstorage.count++
+  count++
 
-
-  
-  
+    document.getElementById('pokeimg').src = stage[count].img
 }
