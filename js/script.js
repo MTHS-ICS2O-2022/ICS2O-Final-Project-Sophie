@@ -13,63 +13,70 @@ if (navigator.serviceWorker) {
   })
 }
 
-const answer = String(document.getElementById('answer').value)
   let stage = [
     {
+      id:0,
+      images:'./images/whopikachu.jpg',
       answer:'pikachu'
     },
     {
-      img: "./img/whobulbasaur.jpg",
+      id:1,
+      images: "./images/whobulbasaur.jpg",
       answer:'bulbasaur'
     },
     {
-      img: "./img/whodiglet.jpg",
+      id:2,
+      images: "./images/whodiglet.jpg",
       answer:'diglet'
     },
     {
-      img: "./img/whoevee.png",
+      id:3,
+      images: "./images/whoevee.png",
       answer:'eevee'
     },
     {
-      img: "./img/whojigglypuff.jpg",
+      id:4,
+      images: "./images/whojigglypuff.jpg",
       answer:'jigglypuff'
     },
     {
-      img: "./img/wholapras.jpg",
+      id:5,
+      images: "./images/wholapras.jpg",
       answer:'lapras'
     },
     {
-      img: "./img/whomewtwo.jpg",
+      id:6,
+      images: "./images/whomewtwo.jpg",
       answer:'mewtwo'
     },
     {
-      img: "./img/whomimikyu.jpg",
+      id:7,
+      images: "./images/whomimikyu.jpg",
       answer:'mimikyu'
     },
     {
-      img: "./img/whomudkip.png",
+      id:8,
+      images: "./images/whomudkip.png",
       answer:'mudkip'
     },
     {
-      img: "./img/whopsyduck.png",
+      id:9,
+      images: "./images/whopsyduck.png",
       answer:'psyduck'
     },
     {
-      img: "./img/whovaporeon.jpg",
+      id:10,
+      images: "./images/whovaporeon.jpg",
       answer:'vaporeon'
     },
   ]
-  let count = 0
-  let points = 0
+  let id = 0
   
 
 function submitClicked() {
 
-  if (answer == stage[count].answer) {
-    points++
-  }
+  const answer = String(document.getElementById('answer').value)
   
-  count++
 
-    document.getElementById('pokeimg').src = stage[count].img
+    document.getElementById('pokeimages').src = stage[count].images
 }
