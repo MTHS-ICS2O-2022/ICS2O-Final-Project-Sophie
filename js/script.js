@@ -69,18 +69,35 @@ if (navigator.serviceWorker) {
       images: "./images/whovaporeon.jpg",
       answer:'vaporeon'
     },
+    
   ]
+  let start = true
   let id = 0
-  
+  let points = 0
 
 function submitClicked() {
 
   const answer = String(document.getElementById('answer').value)
   
+  start = false
+  
   if (answer == stage[id].answer) {
-    
+    points++
   }
 
-  
-    document.getElementById('pokeimages').src = stage[count].images
+  if (id<11) {
+    id++
+    document.getElementById('question').innerHTML = '<img src="' + stage[id].images + '" alt="pokemon" height="50%" width="50%"/>'
+  }
+  else if (id>10){
+    document.getElementById('all').innerHtml = 'hi'
+  }
+
+  console.log(id)
+
+  if (start == true) {
+    id = 0
+    points = 0
+  }
+
 }
