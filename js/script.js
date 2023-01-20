@@ -80,17 +80,16 @@ function submitClicked() {
   const answer = String(document.getElementById('answer').value)
   
   start = false
-  
-  if (answer == stage[id].answer) {
-    points++
-  }
 
   if (id<11) {
-    id++
+    if (answer == stage[id].answer) {
+      points++
+    }
     document.getElementById('question').innerHTML = '<img src="' + stage[id].images + '" alt="pokemon" height="50%" width="50%"/>'
+    id++
   }
-  else if (id>10){
-    document.getElementById('all').innerHtml = 'hi'
+  else {
+    document.getElementById('all').innerHTML = '<h4> you got: </h4> <h4>' + points + '/11 </h4>'
   }
 
   console.log(id)
@@ -99,5 +98,4 @@ function submitClicked() {
     id = 0
     points = 0
   }
-
 }
