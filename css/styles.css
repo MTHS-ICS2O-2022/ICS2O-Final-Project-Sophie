@@ -14,7 +14,6 @@
   padding-top: 15pt;
 }
 
-
 /* Due to error in MDL : https://github.com/google/material-design-lite/issues/5281
 */
 .mdl-ripple {
@@ -23,8 +22,7 @@
 }
 
 body {
-  background-image: url('../images/pokemonbg.png');
-  
+  background-image: url("../images/pokemonbg.png");
 }
 
 #start-button {
@@ -32,16 +30,16 @@ body {
   margin: auto;
 }
 
-button{
+button {
   margin: auto;
 }
 
-#answers{
+#answers {
   width: 30%;
   margin: auto;
 }
 
-#all{
+#all {
   background-color: #fff;
   width: 50%;
   height: 90%;
@@ -50,7 +48,7 @@ button{
   text-align: center;
 }
 
-h5{
+h5 {
   text-align: center;
   color: red;
 }
