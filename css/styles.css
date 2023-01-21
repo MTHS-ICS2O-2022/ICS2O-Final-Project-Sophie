@@ -27,6 +27,11 @@ body {
   
 }
 
+#start-button {
+  width: 30%;
+  margin: auto;
+}
+
 button{
   margin: auto;
 }
