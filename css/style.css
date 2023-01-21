@@ -27,8 +27,12 @@ body {
   
 }
 
-#button{
-  width: 10%;
+button{
+  margin: auto;
+}
+
+a {
+  width: 30%;
   margin: auto;
 }
 
@@ -40,7 +44,7 @@ body {
 #all{
   background-color: #fff;
   width: 50%;
-  height: 90%;
+  height: 95%;
   margin: auto;
   border: 3px solid #ff5757;
   text-align: center;
