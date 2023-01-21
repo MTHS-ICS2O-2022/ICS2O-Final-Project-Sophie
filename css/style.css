@@ -27,12 +27,8 @@ body {
   
 }
 
-button{
-  margin: auto;
-}
-
-a {
-  width: 30%;
+#button{
+  width: 10%;
   margin: auto;
 }
 
@@ -44,7 +40,7 @@ a {
 #all{
   background-color: #fff;
   width: 50%;
-  height: 95%;
+  height: 90%;
   margin: auto;
   border: 3px solid #ff5757;
   text-align: center;
