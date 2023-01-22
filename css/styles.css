@@ -1,0 +1,49 @@
+/* Created by:sophie
+* Created on: jan 2023
+* This file contains the CSS for index.html
+*/
+
+.mdl-layout__header-row {
+  align-items: center;
+  justify-content: center;
+}
+
+.mdl-layout__content {
+  padding-left: 15pt;
+  padding-right: 15pt;
+  padding-top: 15pt;
+}
+
+/* Due to error in MDL : https://github.com/google/material-design-lite/issues/5281
+*/
+.mdl-ripple {
+  background: #000;
+  opacity: 0.001;
+}
+
+body {
+  background-image: url("../images/pokemonbg.png");
+}
+
+#start-button {
+  width: 10%;
+  margin: auto;
+}
+
+button {
+  margin: auto;
+}
+
+#answers {
+  width: 30%;
+  margin: auto;
+}
+
+#all {
+  background-color: #fff;
+  width: 50%;
+  height: 90%;
+  margin: auto;
+  border: 3px solid #ff5757;
+  text-align: center;
+}

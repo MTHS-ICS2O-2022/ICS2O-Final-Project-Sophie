@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- final project -->
+<html lang="en-ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="My first webpage, with a favicon" />
+    <meta name="keywords" content="mths, ics2o" />
+    <meta name="author" content="sophie nguyen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="canonical"
+      href="https://sophie-nguyen-0.github.io/ICS2O-Final-Project-Sophie/"
+    />
+    <link rel="manifest" href="/ICS2O-Final-Project-Sophie/site.webmanifest" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      media="none"
+      onload="if(media!='all')media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      />
+    </noscript>
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.deep_orange-orange.min.css"
+      media="none"
+      onload="if(media!='all')media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://code.getmdl.io/1.3.0/material.deep_orange-orange.min.css"
+      />
+    </noscript>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <title>who's that pokemon</title>
+  </head>
+  <body>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Who's that pokemon?</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div id="all">
+          <br>
+          <br>
+          <div id="question-result">
+            <img 
+              id="pokeimg"
+              src="./images/whopikachu.jpg"
+              alt="pokemon"
+              width="50%"
+              height="60%"
+              />
+          </div>
+          <br>
+          <div id="right-wrong"></div>
+          <br>
+          <div id="answers-img">
+            <h5>your answer:</h5>
+              <!-- Simple Textfield -->
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="answer" style="border-bottom: 1px solid red;">
+                <label class="mdl-textfield__label" for="answer">pokemon...</label>
+              </div>
+            </form>
+          </div>
+          <br>
+          <br>
+          <div id="button">
+            <!-- Accent-colored raised button with ripple -->
+            <button
+              class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+              onclick="submitClicked()"
+            >
+              next
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
