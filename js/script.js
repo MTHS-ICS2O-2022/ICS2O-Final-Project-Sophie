@@ -48,7 +48,7 @@ if (navigator.serviceWorker) {
       id:5,
       images: "./images/wholapras.jpg",
       answer:'lapras',
-      answerImg:'./images/answerLaprasPikachu.png'
+      answerImg:'./images/answerLapras.png'
     },
     {
       id:6,
